@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="SLIKE/favicon.ico">
+    <link rel="stylesheet" href="css/vizitka.css">
+    <title>Vizitka</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html"><img class="logo-slika" src="SLIKE/logo.png" /></a>
+      <input type="checkbox" id="menu-bar" />
+      <label for="menu-bar">Menu</label>
+      <nav class="navbar">
+        <ul>
+          <li><a href="clanek.html">Članki</a></li>
+          <li><a href="urniki.html">Urniki</a></li>
+          <li><a href="vizitka.html">Vizitka</a></li>
+        <li><a href="Oklubu.html">O klubu</a></li>                                   
+			<li><a href="vizija.html">Vizija</a></li>                     
+        </ul>
+      </nav>
+    </header>
+    
+
+
+
+    
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <section class="mb-4">
+            <h2 class="h1-responsive font-weight-bold text-left my-4 formh">Pošljite nam sporočilo:</h2>
+            <div class="row">
+              <div class="col-md-12 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="md-form mb-0">
+                        <label for="name" class="">Ime in priimek:</label>
+                        <input type="text" id="name" name="name" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="md-form mb-0">
+                        <label for="email" class="">Vaš email:</label>
+                        <input type="text" id="email" name="email" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="md-form mb-0">
+                        <label for="subject" class="">Zadeva:</label>
+                        <input type="text" id="subject" name="subject" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="md-form">
+                        <label for="message">Sporočilo:</label>
+                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="text-center text-md-left">
+                  <br>
+                  <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                </div>
+                <div class="status"></div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="col-sm">
+          <div class="vizitka-container">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="SLIKE/favicon.ico" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title"><b>Kontakrirajte nas</b></h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="bi bi-telephone"></i>  042 453 991</li>
+                <li class="list-group-item"><i class="bi bi-envelope-at"></i>  info@vaterpololjubljana.si</li>
+                <li class="list-group-item"><i class="bi bi-geo-alt"></i>  Kopališče Kodeljevo 99</li>
+              </ul>
+              <div class="card-body">
+                <a href="https://www.facebook.com/VKLjubljana" class="card-link"><i class="bi bi-facebook"></i></a>
+                <a href="https://twitter.com/total_waterpolo" class="card-link"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.instagram.com/vkljubljanaslovan/" class="card-link"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>

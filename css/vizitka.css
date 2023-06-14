@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+body {
+  min-height: 100vh;
+  background-color: #e0ffd9;
+}
+header {
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #f0f5f5;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 0px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.navbar a{text-decoration: none;}
+
+header .logo {
+  font-weight: bolder;
+  font-size: 25px;
+}
+.logo-slika {
+  width: 50%;
+}
+header .navbar ul {
+  list-style: none;
+}
+header .navbar ul li {
+  position: relative;
+  float: left;
+}
+header .navbar ul li a {
+  font-size: 20px;
+  padding: 20px;
+  color: #2ea813;
+  display: block;
+  border-radius: 5px;
+}
+header .navbar ul li a:hover {
+  background: #0f5200;
+  color: white;
+}
+header .navbar ul li ul {
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: white;
+  display: none;
+}
+header .navbar ul li ul li {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+  display: initial;
+}
+#menu-bar {
+  display: none;
+}
+header label {
+  font-size: 20px;
+  color: #2ea813;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 1490px) {
+  .navbar {
+    width: 80%;
+  }
+  header .navbar ul li a {
+    padding: 15px;
+  }
+}
+@media (max-width: 991px) {
+  header {
+    padding: 20px;
+  }
+  header label {
+    display: initial;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  header .navbar ul li {
+    width: 100%;
+  }
+  header .navbar ul li ul {
+    position: relative;
+    width: 100%;
+  }
+  header .navbar ul li ul li {
+    background: white;
+  }
+  #menu-bar:checked ~ .navbar {
+    display: initial;
+  }
+}
+
+.vizitka-container{
+  align-items: center;
+  justify-content: center;
+}
+
+.card{
+  border-radius: 50px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  padding: 10px;
+}
+
+.card .card-body a{
+  color:#2ea813;
+  font-size: 2em;
+}
+
+.card .list-group i{
+  color:#2ea813
+}
+
+.btn-primary{
+  --bs-btn-bg: #2ea813 !important;
+  --bs-btn-border-color: #2ea813 !important;
+  --bs-btn-hover-border-color: #e0ffd9 !important;
+  --bs-btn-active-bg: #2ea813 !important;
+  --bs-btn-hover-bg: #e0ffd9 !important;
+  --bs-btn-hover-color: #0f5200 !important;
+  --bs-btn-active-border-color: #2ea813 !important;
+}
+
+.formh{
+  color:#2ea813;
+  font-weight: bold;
+}
+
+.mb-4{
+  margin-top: 10vh;
+}

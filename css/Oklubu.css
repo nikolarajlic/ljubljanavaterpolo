@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+body {
+  padding: 7%;
+  min-height: 100vh;
+  background-image: url("../SLIKE/nadBazenom.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(255,255,255,0.8);
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #f0f5f5;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 0px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+header .logo {
+  font-weight: bolder;
+  font-size: 25px;
+}
+.logo-slika {
+  width: 50%;
+}
+header .navbar ul {
+  list-style: none;
+}
+header .navbar ul li {
+  position: relative;
+  float: left;
+}
+header .navbar ul li a {
+  font-size: 20px;
+  padding: 20px;
+  color: #2ea813;
+  display: block;
+  border-radius: 5px;
+}
+header .navbar ul li a:hover {
+  background: #0f5200;
+  color: white;
+}
+header .navbar ul li ul {
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: white;
+  display: none;
+}
+header .navbar ul li ul li {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+  display: initial;
+}
+#menu-bar {
+  display: none;
+}
+header label {
+  font-size: 20px;
+  color: #2ea813;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 1490px) {
+  .navbar {
+    width: 80%;
+  }
+  header .navbar ul li a {
+    padding: 10px;
+  }
+}
+@media (max-width: 991px) {
+  header {
+    padding: 20px;
+  }
+  header label {
+    display: initial;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  header .navbar ul li {
+    width: 100%;
+  }
+  header .navbar ul li ul {
+    position: relative;
+    width: 100%;
+  }
+  header .navbar ul li ul li {
+    background: white;
+  }
+  #menu-bar:checked ~ .navbar {
+    display: initial;
+  }
+}
+.body {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.p {
+  width: 90%;
+  margin: auto;
+}
+.slikca-domov {
+  float: right;
+  height: 2%;
+  width: 2%;
+}
+.back::before {
+  content: "";
+  background-image: url("../../SLIKE/ozadje.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.35;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  opacity: 1;
+}
+p {
+  color: black;
+}
+
+.odstavek{font-size: 1.2em;}
+.odstavek h1{
+  color:#2ea813;
+  border-bottom: #0f5200 dotted 2px;
+  text-align: left;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
